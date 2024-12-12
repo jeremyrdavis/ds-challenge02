@@ -13,22 +13,27 @@
 * With tools and the extensions already part of the source code, your job becomes much easier to just start coding
 * Run the below command to check for compilation errors. You will see the code compiles fine
     ```bash
-    ./dotnet build ./src
+    dotnet build ./src
     ```
 * Run the quarkus application in live coding mode
    ```bash
     cd src && ./dotnet watch run
     ```
  
-* Open another terminal and invoke "curl localhost:8080/api/greet/bengaluru". You will see empty result
+* Open another terminal and invoke "curl localhost:5151/api/greet/bengaluru". You will see empty result
 * Open "./Controllers/DsChallenge02Controller.cs". You will observe the method "greetUser" needs to be fixed.
 
 ### Success Criteria
 * Method "greetUser" is updated to accept a string as a parameter and returns a concatenated string of "Hello " and the passed name
 * Invoking below service endpoint and it should return "Hello bengaluru"
     ```bash
-    curl localhost:8080/api/greet/bengaluru
+    curl localhost:5151/api/greet/bengaluru
     ```
+* Write a test case in /test/Challenge02_Tests.cs and run with
+    ```bash
+    dotnet test
+    ```
+* Run the 'Build' Task from the devfile
 
 ### Resources
 * https://dotnet.microsoft.com/en-us/learn/csharp
