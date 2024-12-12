@@ -15,7 +15,7 @@
     ```bash
     dotnet build ./src
     ```
-* Run the quarkus application in live coding mode
+* Run the application in live coding mode
    ```bash
     cd src && ./dotnet watch run
     ```
@@ -33,7 +33,6 @@
     ```bash
     dotnet test
     ```
-* Run the 'Build' Task from the devfile
 
 ### Resources
 * https://dotnet.microsoft.com/en-us/learn/csharp

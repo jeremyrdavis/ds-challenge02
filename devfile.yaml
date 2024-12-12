@@ -11,20 +11,3 @@ components:
   - name: nuget
     volume:
       size: 1G
-commands:
-  - id: 1-update-dependencies
-    exec:
-      label: 1.Update dependencies
-      component: tools
-      workingDir: ${PROJECTS_ROOT}/ds-challenge02/src
-      commandLine: "dotnet restore"
-      group:
-        kind: build
-  - id: 2-build
-    exec:
-      label: 2.Build
-      component: tools
-      workingDir: ${PROJECTS_ROOT}/ds-challenge02/src
-      commandLine: "dotnet build"
-      group:
-        kind: build
