@@ -1,6 +1,6 @@
 schemaVersion: 2.2.2
 metadata:
-  name: dotnet
+  name: challenge2-workspace
 components:
   - name: tools
     container:
