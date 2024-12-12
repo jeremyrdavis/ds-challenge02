@@ -7,9 +7,9 @@ namespace ds_challenge_02.Controllers;
 public class DsChallenge02Controller : ControllerBase
 {
 
-    [HttpGet(Name = "GreetChallengeAttendees")]
-    public string GreetChallengeAttendees()
+    [HttpGet(Name = "GreetUser")]
+    public string GreetUser()
     {
-        return "Hello Challenge Attendees";
+        return "TODO: updated to accept a string as a parameter and returns a concatenated string of \"Hello \" and the passed name";
     }
 }

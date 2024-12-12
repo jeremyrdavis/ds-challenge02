@@ -5,13 +5,13 @@ namespace Challenge2Tests;
 public class Challenge02_Tests
 {
      [Fact]
-        public async Task Get_GreetChallengeAttendees()
+        public async Task Get_GreetUser()
         {
             // Arrange
             var controller = new DsChallenge02Controller();
 
             // Act
-            var result = controller.GreetChallengeAttendees();
+            var result = controller.GreetUser();
 
             // Assert
             Assert.NotNull(result);

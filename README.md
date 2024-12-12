@@ -10,21 +10,18 @@
     ```bash
     oc --help
     ```
-    ```bash
-    jq --help
-    ```
 * With tools and the extensions already part of the source code, your job becomes much easier to just start coding
 * Run the below command to check for compilation errors. You will see the code compiles fine
     ```bash
-    ./dotnet build
+    ./dotnet build ./src
     ```
 * Run the quarkus application in live coding mode
-    ```bash
-    ./dotnet run
+   ```bash
+    cd src && ./dotnet watch run
     ```
  
 * Open another terminal and invoke "curl localhost:8080/api/greet/bengaluru". You will see empty result
-* Open the "Program.cs". You will observe the method "greetUser" needs to be fixed.
+* Open "./Controllers/DsChallenge02Controller.cs". You will observe the method "greetUser" needs to be fixed.
 
 ### Success Criteria
 * Method "greetUser" is updated to accept a string as a parameter and returns a concatenated string of "Hello " and the passed name

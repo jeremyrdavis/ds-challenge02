@@ -1,7 +1,5 @@
 {
     "recommendations": [
-        "ms-dotnettools.csharp",
-        "jsw.csharpextensions",
-        "cnshenj.vscode-task-manager"
+        "ms-dotnettools.csharp"
     ]
 }
