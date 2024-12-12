@@ -28,27 +28,3 @@ commands:
       commandLine: "dotnet build"
       group:
         kind: build
-  - id: 3-test
-    exec:
-      label: 3.Test
-      component: tools
-      workingDir: ${PROJECTS_ROOT}/ds-challenge02/test
-      commandLine: "dotnet test"
-      group:
-        kind: run
-  - id: 4-run
-    exec:
-      label: 4.Run
-      component: tools
-      workingDir: ${PROJECTS_ROOT}/ds-challenge02/src
-      commandLine: "dotnet run"
-      group:
-        kind: run
-  - id: 5-run-live-mode
-    exec:
-      label: 5.Run (Hot Reload)
-      component: tools
-      workingDir: ${PROJECTS_ROOT}/ds-challenge02/src
-      commandLine: "dotnet watch run"
-      group:
-        kind: run
