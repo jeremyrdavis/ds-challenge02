@@ -17,7 +17,7 @@
     ```
 * Run the application in live coding mode
    ```bash
-    cd src && ./dotnet watch run
+    cd src && dotnet watch run
     ```
  
 * Open another terminal and invoke "curl localhost:5151/api/greet/bengaluru". You will see empty result
